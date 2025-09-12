@@ -1,8 +1,8 @@
 //Variaveis do nome, e varieveis de preço com valor para ser adicionado na hora da seleção dos itens
 let nome = prompt("bem-vindo ao nosso restaurante?! diga-nos seu nome:")
-let preçoItem1 = 0
-let preçoItem2 = 0
-let preçoItem3 = 0
+let precoItem1 = 0
+let precoItem2 = 0
+let precoItem3 = 0
 
 alert("esse é o nosso cardapio")
 alert(`
@@ -21,19 +21,19 @@ if (item1 === 5) {
     switch (item1) {
         case 1:
             item1 = "HamBúrguer"
-            preçoItem1 = +20
+            precoItem1 = +20
             break
         case 2:
             item1 = "Pizza"
-            preçoItem1 = +35
+            precoItem1 = +35
             break
         case 3:
             item1 = "Refrigerante"
-            preçoItem1 = +5
+            precoItem1 = +5
             break
         case 4:
             item1 = "Batata"
-            preçoItem1 = +12
+            precoItem1 = +12
             break
         case 5:
             alert("que pena")
@@ -49,19 +49,19 @@ if (item1 === 5) {
         switch (item2) {
             case 1:
                 item2 = "HamBúrguer"
-                preçoItem2 = +20
+                precoItem2 = +20
                 break
             case 2:
                 item2 = "Pizza"
-                preçoItem2 = +35
+                precoItem2 = +35
                 break
             case 3:
                 item2 = "Refrigerante"
-                preçoItem2 = +5
+                precoItem2 = +5
                 break
             case 4:
                 item2 = "Batata"
-                preçoItem2 = +12
+                precoItem2 = +12
         }
 
         let item3 = parseInt(prompt("qual sera seu ultimo prato?"))
@@ -71,23 +71,23 @@ if (item1 === 5) {
             switch (item3) {
                 case 1:
                     item3 = "HamBúrguer"
-                    preçoItem3 = +20
+                    precoItem3 = +20
                     break
                 case 2:
                     item3 = "Pizza"
-                    preçoItem3 = +35
+                    precoItem3 = +35
                     break
                 case 3:
                     item3 = "Refrigerante"
-                    preçoItem3 = +5
+                    precoItem3 = +5
                     break
                 case 4:
                     item3 = "Batata"
-                    preçoItem3 = +12
+                    precoItem3 = +12
             }
 
             //calculo para o total bruto
-            let totalBruto = preçoItem1 + preçoItem2 + preçoItem3
+            let totalBruto = precoItem1 + precoItem2 + precoItem3
             //abaixo ha calculo dos descontos, se for estudante ganha 10% de desconto e se a compra der acima de 50, ganha um desconto de 5%
             //aqui ele está testando pra saber se há os dois descontos, ou se ha um ou outro ou os dois 
             let perguntaEstudante = prompt("você tem carteirinha de estudante? (s/n)").toLowerCase()
@@ -98,9 +98,9 @@ if (item1 === 5) {
                 alert(`
         Obrigado ${nome}!
         Pratos escolhidos:
-        - ${item1} de R$${preçoItem1}
-        - ${item2} de R$${preçoItem2}
-        - ${item3} de R$${preçoItem3}
+        - ${item1} de R$${precoItem1}
+        - ${item2} de R$${precoItem2}
+        - ${item3} de R$${precoItem3}
         total sem desconto: R$${totalBruto}
         total com desconto: R$${total.toFixed(2)}
         `)
@@ -110,9 +110,9 @@ if (item1 === 5) {
                 alert(`
         Obrigado ${nome}!
         Pratos escolhidos:
-        - ${item1} de R$${preçoItem1}
-        - ${item2} de R$${preçoItem2}
-        - ${item3} de R$${preçoItem3}
+        - ${item1} de R$${precoItem1}
+        - ${item2} de R$${precoItem2}
+        - ${item3} de R$${precoItem3}
         total sem desconto: R$${totalBruto}
         total com desconto: R$${total.toFixed(2)}
         `)
@@ -122,9 +122,9 @@ if (item1 === 5) {
                 alert(`
     Obrigado ${nome}!
     Pratos escolhidos:
-    - ${item1} de R$${preçoItem1}
-    - ${item2} de R$${preçoItem2}
-    - ${item3} de R$${preçoItem3}
+    - ${item1} de R$${precoItem1}
+    - ${item2} de R$${precoItem2}
+    - ${item3} de R$${precoItem3}
     total sem desconto: R$${totalBruto}
     total com desconto: R$${total.toFixed(2)}
     `)
@@ -134,9 +134,9 @@ if (item1 === 5) {
                 alert(`
     Obrigado ${nome}!
     Pratos escolhidos:
-    - ${item1} de R$${preçoItem1}
-    - ${item2} de R$${preçoItem2}
-    - ${item3} de R$${preçoItem3}
+    - ${item1} de R$${precoItem1}
+    - ${item2} de R$${precoItem2}
+    - ${item3} de R$${precoItem3}
     total sem desconto: R$${totalBruto}
     total com desconto: R$${total.toFixed(2)}
     `)
