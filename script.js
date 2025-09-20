@@ -152,8 +152,20 @@ if (item1 === 5) {
                 total sem desconto: R$${totalBruto.toFixed(2)}
                 total com desconto: R$${total.toFixed(2)}
                 `)
-            } else {
-                alert("alguma erro aconteceu! reinicie a pagina e recomece o pedido")
+            } else if(perguntaEstudante == "n" && totalBruto <= 50){
+                let desconto = 0
+                let total = parseFloat(totalBruto - desconto)
+                alert(`
+                Obrigado ${nome}!
+                Pratos escolhidos:
+                - ${item1} de R$${preçoItem1.toFixed(2)}
+                - ${item2} de R$${preçoItem2.toFixed(2)}
+                - ${item3} de R$${preçoItem3.toFixed(2)}
+                total sem desconto: R$${totalBruto.toFixed(2)}
+                total com desconto: R$${total.toFixed(2)}
+                `)
+            } else{
+                alert("alguma coisa deu errado! porfavor reinicie a pagina.")
             }
         }
     }
